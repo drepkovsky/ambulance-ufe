@@ -142,7 +142,7 @@ export class DrAmbulanceWlEditor {
         <div class="actions">
           <md-filled-tonal-button id="delete" disabled={!this.entry} onClick={() => this.deleteEntry()}>
             <md-icon slot="icon">delete</md-icon>
-            Zmazať
+            Zmazať záznam
           </md-filled-tonal-button>
           <span class="stretch-fill"></span>
           <md-outlined-button id="cancel" onClick={() => this.editorClosed.emit('cancel')}>
