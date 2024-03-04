@@ -1,11 +1,11 @@
 name: Ambulance uFE CI
 on:
   push:
-    branches: ['master']
+    branches: ['main']
     tags:
       - 'v1*'
   pull_request:
-    branches: ['master']
+    branches: ['main']
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            <your-dockerhub-account>/ambulance-ufe
+            drepkovsky/ambulance-ufe
           tags: |
             type=schedule
             type=ref,event=branch
