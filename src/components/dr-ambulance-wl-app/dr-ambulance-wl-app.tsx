@@ -56,7 +56,7 @@ export class DrAmbulanceWlApp {
     return (
       <Host>
         {element === 'editor' ? (
-          <dr-ambulance-wl-editor entry-id={entryId} oneditor-closed={() => navigate('./list')}></dr-ambulance-wl-editor>
+          <dr-ambulance-wl-editor entry-id={entryId} oneditor-closed={() => navigate('./list')} ambulance-id={this.ambulanceId} api-base={this.apiBase}></dr-ambulance-wl-editor>
         ) : (
           <dr-ambulance-wl-list
             ambulance-id={this.ambulanceId}

@@ -33,6 +33,7 @@ describe('dr-ambulance-wl-list', () => {
 
   it('renders sample entries', async () => {
     // simulate API response using sampleEntries
+    mock.onGet().reply(200, sampleEntries);
 
     // set proper attributes
     const page = await newSpecPage({
