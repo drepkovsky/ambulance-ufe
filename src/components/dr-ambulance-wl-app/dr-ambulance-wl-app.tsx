@@ -40,6 +40,7 @@ export class DrAmbulanceWlApp {
   }
 
   render() {
+    console.debug("dr-ambulance-wl-app.render() - path: %s", this.relativePath);
     let element = 'list';
     let entryId = '@new';
 
